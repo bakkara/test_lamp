@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const arrowNext = document.querySelector('.arrow-next'); 
     const arrowPrev = document.querySelector('.arrow-prev');
     const root = document.documentElement;
-    
+    const logoHeader = document.querySelector('.name-collection-header');
+
     arrowNext.addEventListener('click', toggleHero);
     arrowPrev.addEventListener('click', toggleHero);
 
@@ -20,15 +21,18 @@ document.addEventListener('DOMContentLoaded', function () {
             root.style.setProperty('--color-background', '#AB4E3D');
             second.classList.add('current');
             first.classList.remove('current');
+            logoHeader.textContent = 'Capsule'
         }
         if (firstHero.classList.contains('is-open')) {
             second.classList.remove('current');
             first.classList.add('current');
             root.style.setProperty('--color-background', '#435476');
+            logoHeader.textContent = 'luminaire'
         }
     }
     function toggleSecondHero() {
         firstHero.classList.remove('is-open');
+        logoHeader.textContent = 'Capsule'
         second.classList.add('current');
         first.classList.remove('current');
         secondHero.classList.add('is-open');
@@ -41,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
         secondHero.classList.remove('is-open');
         firstHero.classList.add('is-open');
         root.style.setProperty('--color-background', '#435476');
+        logoHeader.textContent = 'luminaire'
     }
     
 });

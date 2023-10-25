@@ -94,6 +94,7 @@ img {
 .link {
   text-decoration: none;
   outline: transparent;
+  transition: transform var(--transition);
 }
 
 .list {
@@ -132,11 +133,13 @@ img {
   justify-content: center;
   outline: transparent;
   transition: transform var(--transition);
+  cursor: pointer;
 }
 .burger-btn:hover,
 .burger-btn:focus {
   transform: scale(1.3);
 }
+
 .burger-icon {
   stroke: var(--color-text-grey);
 }
@@ -150,19 +153,69 @@ img {
   display: flex;
   gap: 35px;
 }
+.header-item {
+  transition: transform var(--transition);
+}
+.header-item:hover,
+.header-item:focus {
+  transform: scale(1.3);
+}
 .header-item-link {
   color: var(--color-white);
   font-size: 18px;
   font-weight: 400;
+  transition: transform var(--transition);
+}
+.name-collection-header {
+  font-size: 40px;
+  color: var(--color-white);
+  font-family: "Tenor Sans";
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 3.2px;
+  text-transform: lowercase;
+  margin-right: auto;
+  position: relative;
+}
+.name-collection-header::before {
+  content: "";
+  position: absolute;
+  top: 64px;
+  left: -55px;
+  width: 1px;
+  height: 16px;
+  background-color: currentColor;
+}
+.name-collection-header::after {
+  content: "";
+  position: absolute;
+  top: 64px;
+  right: -55px;
+  width: 1px;
+  height: 16px;
+  background-color: currentColor;
 }
 
+.header-icon-item {
+  transition: transform var(--transition);
+}
+
+.header-icon-item:hover,
+.header-icon-item:focus {
+  transform: scale(1.3);
+}
 .contact {
   display: block;
   font-size: 20px;
   color: var(--color-white);
-  transition: color var(--transition);
+  transition: transform var(--transition);
   margin-right: 120px;
 }
+.contact:hover,
+.contact:focus {
+  transform: scale(1.3);
+}
+
 .header-icon-list {
   display: flex;
   gap: 32px;
@@ -178,6 +231,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 9;
   background-color: rgba(0, 0, 0, 0.4);
   transition: opacity var(--transition), visibility var(--transition);
 }
@@ -192,7 +246,7 @@ img {
   left: 0;
   width: 528px;
   background-color: var(--color-white);
-  z-index: 999;
+  z-index: 9;
   transform: translateX(-100%);
   transition: transform var(--transition);
   overflow: auto;

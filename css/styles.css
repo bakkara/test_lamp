@@ -95,6 +95,7 @@ img {
   text-decoration: none;
   outline: transparent;
   transition: transform var(--transition);
+  cursor: pointer;
 }
 
 .list {
@@ -300,8 +301,12 @@ img {
   text-transform: capitalize;
   display: flex;
   justify-content: space-between;
+  transition: transform var(--transition);
 }
-
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+  transform: scale(1.05);
+}
 .mobile-menu-more-icon {
   stroke: #a1a1a1;
   fill: transparent;
@@ -333,6 +338,7 @@ img {
   padding: 0 20px 40px;
 }
 .sale-card {
+  display: block;
   position: relative;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -516,8 +522,11 @@ img {
   letter-spacing: 1.3px;
   position: absolute;
   top: 321px;
+  transition: transform var(--transition);
 }
-
+.link-see:hover {
+  transform: scale(1.3);
+}
 .second-theme,
 .first-theme {
   display: none;

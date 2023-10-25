@@ -467,14 +467,11 @@ img {
 .second-theme,
 .first-theme {
   display: none;
-  transform: translateX(-100%);
-  transition: transform var(--transition);
 }
 
 .second-theme.is-open,
 .first-theme.is-open {
   display: block;
-  transform: translateX(0);
 }
 
 .swiper-hero {

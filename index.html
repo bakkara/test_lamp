@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <button class="burger-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+                    <svg width="36" height="36" class="burger-icon">
+                        <use href="/img/icons.svg#icon-menu">
+                        </use>
+                    </svg>
+                </button>
+
+                <nav class="header-nav">
+                    <ul class="header-list list">
+                        <li class="header-item"> <a class="header-item-link link current" href="">Home</a></li>
+                        <li class="header-item"><a class="header-item-link link" href="">Pages</a></li>
+                        <li class="header-item"><a class="header-item-link link" href="">Blog</a></li>
+                        <li class="header-item"><a class="header-item-link link" href="">Shop</a></li>
+                        <li class="header-item"><a class="header-item-link link" href="">Contacts</a></li>
+                    </ul>
+                </nav>
+
+
+                <a class="contact link" href="tel:+88001232334">+8 800 123 23 34</a>
+                <ul class="header-icon-list list">
+                    <li class="header-icon-item">
+                        <a class="header-item-link link" href="">
+                            <svg width="40" height="40" class="header-icon">
+                                <use href="/img/icons.svg#icon-network">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-icon-item">
+                        <a class="header-item-link link" href="">
+                            <svg width="40" height="40" class="header-icon">
+                                <use href="/img/icons.svg#icon-search">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class=" header-icon-item">
+                        <a class="header-item-link link" href="">
+                            <svg width="40" height="40" class="header-icon">
+                                <use href="/img/icons.svg#icon-user">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-icon-item">
+                        <a class="header-item-link link" href="">
+                            <svg width="40" height="40" class="header-icon">
+                                <use href="/img/icons.svg#icon-heart">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-icon-item">
+                        <a class="header-item-link link" href="">
+                            <svg width="40" height="40" class="header-icon">
+                                <use href="/img/icons.svg#icon-compare">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-icon-item">
+                        <a class="header-item-link link" href="">
+                            <svg width="40" height="40" class="header-icon">
+                                <use href="/img/icons.svg#icon-shopping-bag">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </header>
+    <!-- Mobile Menu -->
+    <div class="backdrop is-hidden">
+        <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+
+            <button class=" mobile-menu-close-btn js-close-menu">
+                <svg class="mobile-menu-close-icon" width="24" height="24">
+                    <use href="/img/icons.svg#icon-close">
+                    </use>
+                </svg>
+            </button>
+            <div class="mobile-menu-header">Menu</div>
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-item current">
+                    <a href="" class="mobile-menu-link link">
+                        <p>New Collection</p>
+                        <svg class="mobile-menu-more-icon current" width="16" height="16">
+                            <use href="/img/icons.svg#icon-more">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="" class="mobile-menu-link link">
+                        <p>New Arrival</p>
+                        <svg class="mobile-menu-more-icon" width="16" height="16">
+                            <use href="/img/icons.svg#icon-more">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="" class="mobile-menu-link link">
+                        <p>Best Choice</p>
+                        <svg class="mobile-menu-more-icon" width="16" height="16">
+                            <use href="/img/icons.svg#icon-more">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="" class="mobile-menu-link link">
+                        <p>Big Sale -80%</p>
+                        <svg class="mobile-menu-more-icon" width="16" height="16">
+                            <use href="/img/icons.svg#icon-more">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="" class="mobile-menu-link link">
+                        <p>Best Offer</p>
+                        <svg class="mobile-menu-more-icon" width="16" height="16">
+                            <use href="/img/icons.svg#icon-more">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="" class="mobile-menu-link link">
+                        <p>season discounts</p>
+                        <svg class="mobile-menu-more-icon" width="16" height="16">
+                            <use href="/img/icons.svg#icon-more">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <div class="follow-us-menu">
+                <p class="follow-us-text-menu">Follow us:</p>
+                <div class="soc-icon">
+                    <ul class="soc-icon-list list">
+                        <li class="soc-icon-item">
+                            <a href="">
+                                <svg width="24" height="24" class="soc-button-menu-icon">
+                                    <use href="/img/icons.svg#icon-social-facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc-icon-item">
+                            <a href="">
+                                <svg width="24" height="24" class="soc-button-menu-icon">
+                                    <use href="/img/icons.svg#icon-social-twitter">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc-icon-item">
+                            <a href="">
+                                <svg width="24" height="24" class="soc-button-menu-icon">
+                                    <use href="/img/icons.svg#icon-social-instagram">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                </div>
+            </div>
+            <div class="sale-card">
+                <div class="max">
+                    <div class="text-max-wrapper">
+                        <span class="text-max">max</span>
+                        <span class="text-card-sale">80</span>
+                        <span class="text-percent">%</span>
+                        <span class="text-off">off</span>
+                    </div>
+
+                </div>
+                <p class="text-sale">Sale</p>
+                <p class="text-time">Time</p>
+
+            </div>
+        </div>
+    </div>
+    <!-- Main -->
+
+    <main>
+        <!-- Hero -->
+        <section class="section hero">
+            <div class="container">
+                <div class="swiper-hero">
+                    <div class="first-theme is-open" id="first-hero">
+                        <div class="caption-wrapper">
+                            <p class="caption">New Collection</p>
+                            <a class="link-see link" href="">See Collection
+                                <svg width="24" height="24" class="icon-arrow">
+                                    <use href="/img/icons.svg#icon-arrow">
+                                    </use>
+                                </svg>
+
+                            </a>
+                        </div>
+                        <ul class="img-collection-list list">
+                            <li>
+                                <picture class="img-collection-img-main">
+                                    <source srcset="/img/birot_10.webp 1x, /img/birot_10_2x.webp 2x"
+                                        type="image/webp" />
+                                    <source srcset="/img/birot_10-min.jpg 1x, /img/birot_10_2x-min.jpg 2x"
+                                        type="image/jpeg" />
+                                    <img src="/img/birot_10-min.jpg" alt="hero-image" width="770" height="660" />
+                                </picture>
+                            </li>
+                            <li class="img-collection-item">
+                                <picture class="img-collection-img">
+                                    <source srcset="/img/image-2.webp 1x, /img/image-2-2x.webp 2x" type="image/webp" />
+                                    <source srcset="/img/image-2-min.jpg 1x, /img/image-2-2x-min.jpg 2x"
+                                        type="image/jpeg" />
+                                    <img src="/img/image-2-min.jpg" alt="hero-image-2" width="770" />
+                                </picture>
+                                <h3 class="caption-product">Coral Reef Floor Lamp</h3>
+
+                                <p class=" description">Dimensions: Width 33 cm; Height 162 cm <br>
+                                    Color: Metallic pink, Silver <br>
+                                    Material: Polycarbonate + Aluminum
+                                </p>
+
+                                <div class="sale-price">
+                                    <p class="new-price">$99</p>
+                                    <p class="old-price">$120</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="second-theme" id="second-hero">
+                        <div class="caption-wrapper">
+                            <p class="caption">LED Lighting</p>
+                            <a class="link-see link" href="">See Collection
+                                <svg width="24" height="24" class="icon-arrow">
+                                    <use href="/img/icons.svg#icon-arrow">
+                                    </use>
+                                </svg>
+
+                            </a>
+                        </div>
+                        <ul class="img-collection-list list">
+                            <li>
+                                <picture class="img-collection-img-main">
+                                    <source srcset="/img/birot_10_1.webp 1x, /img/birot_10_1_2x.webp 2x"
+                                        type="image/webp" />
+                                    <source srcset="/img/birot_10_1-min.jpg 1x, /img/birot_10_1_2x-min.jpg 2x"
+                                        type="image/jpeg" />
+                                    <img src="/img/birot_10_1-min.jpg" alt="hero-image" width="770" height="660" />
+                                </picture>
+                            </li>
+                            <li class="img-collection-item">
+                                <picture class="img-collection-img">
+                                    <source srcset="/img/image-2_2.webp 1x, /img/image-2_2-2x.webp 2x"
+                                        type="image/webp" />
+                                    <source srcset="/img/image-2_2-min.jpg 1x, /img/image-2_2-2x-min.jpg 2x"
+                                        type="image/jpeg" />
+                                    <img src="/img/image-2_2-min.jpg" alt="hero-image-2" width="770" />
+                                </picture>
+                                <h3 class="caption-product">Coral Reef Floor Lamp</h3>
+
+                                <p class=" description">Dimensions: Width 33 cm; Height 162 cm <br>
+                                    Color: Metallic pink, Silver <br>
+                                    Material: Polycarbonate + Aluminum
+                                </p>
+
+                                <div class="sale-price">
+                                    <p class="new-price">$99</p>
+                                    <p class="old-price">$120</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <ul class="pagination-list list">
+                        <li class="pagination-item first">
+                            <button type="button" class="btn-pagination current">1</button>
+                        </li>
+                        <li class="pagination-item second">
+                            <button type="button" class="btn-pagination">2</button>
+                        </li>
+                        <li class="pagination-item">
+                            <button type="button" class="btn-pagination">3</button>
+                        </li>
+                    </ul>
+                    <div class="arrows">
+                        <svg width="24" height="24" class="arrow-prev">
+                            <use href="/img/icons.svg#icon-arrow-left">
+                            </use>
+                        </svg><svg width="26" height="13" class="arrow-next">
+                            <use href="/img/icons.svg#icon-arrow-right">
+                            </use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Collection-->
+        <section class=" section">
+            <p class="section-text">DISCOVER OUR</p>
+            <h2 class="section-title">NEW COLLECTION</h2>
+            <div class="new-collection-container ">
+                <ul class="new-collection-list list owl-carousel">
+                    <li class="new-collection-item">
+                        <picture class="new-collection-img">
+                            <source srcset="/img/img01-min.webp, /img/img01-min@2x.webp 2x" type="image/webp" />
+                            <source srcset="/img/img01-min.jpg 1x, /img/img01-min@2x.jpg 2x" type="image/jpeg" />
+                            <img src="/img/img01-min.jpg" alt="hero-image" width="376" height="524" />
+                        </picture>
+                        <div class="img-text-container">
+                            <p class="new-collection-name">lampshades</p>
+                            <a href="" class="link-view link">view more</a>
+                        </div>
+                    </li>
+                    <li class="new-collection-item">
+                        <picture class="new-collection-img">
+                            <source srcset="/img/img02-min.webp, /img/img02-min@2x.webp 2x" type="image/webp" />
+                            <source srcset="/img/img02-min.jpg 1x, /img/img02-min@2x.jpg 2x" type="image/jpeg" />
+                            <img src="/img/img02-min.jpg" alt="hero-image" width="376" height="524" />
+                        </picture>
+                        <div class="img-text-container">
+                            <p class="new-collection-name">invisible</p>
+                            <a href="" class="link-view link">view more</a>
+                        </div>
+                    </li>
+                    <li class="new-collection-item">
+                        <picture class="new-collection-img">
+                            <source srcset="/img/img03-min.webp, /img/img03-min@2x.webp 2x" type="image/webp" />
+                            <source srcset="/img/img03-min.jpg 1x, /img/img03-min@2x.jpg 2x" type="image/jpeg" />
+                            <img src="/img/img03-min.jpg" alt="hero-image" width="376" height="524" />
+                        </picture>
+                        <div class="img-text-container">
+                            <p class="new-collection-name">lamp</p>
+                            <a href="" class="link-view link">view more</a>
+                        </div>
+                    </li>
+                    <li class="new-collection-item">
+                        <picture class="new-collection-img">
+                            <source srcset="/img/img04-min.webp, /img/img04-min@2x.webp 2x" type="image/webp" />
+                            <source srcset="/img/img04-min.jpg 1x, /img/img04-min@2x.jpg 2x" type="image/jpeg" />
+                            <img src="/img/img04-min.jpg" alt="hero-image" width="376" height="524" />
+                        </picture>
+                        <div class="img-text-container">
+                            <p class="new-collection-name">ceiling</p>
+                            <a href="" class="link-view link">view more</a>
+                        </div>
+                    </li>
+                    <li class="new-collection-item">
+                        <picture class="new-collection-img">
+                            <source srcset="/img/img05-min.webp, /img/img05-min@2x.webp 2x" type="image/webp" />
+                            <source srcset="/img/img05-min.jpg 1x, /img/img05-min@2x.jpg 2x" type="image/jpeg" />
+                            <img src="/img/img05-min.jpg" alt="hero-image" width="376" height="524" />
+                        </picture>
+                        <div class="img-text-container">
+                            <p class="new-collection-name">LED</p>
+                            <a href="" class="link-view link">view more</a>
+                        </div>
+                    </li>
+                    <li class="new-collection-item">
+                        <picture class="new-collection-img">
+                            <source srcset="/img/img06-min.webp, /img/img06-min@2x.webp 2x" type="image/webp" />
+                            <source srcset="/img/img06-min.jpg 1x, /img/img06-min@2x.jpg 2x" type="image/jpeg" />
+                            <img src="/img/img06-min.jpg" alt="hero-image" width="376" height="524" />
+                        </picture>
+                        <div class="img-text-container">
+                            <p class="new-collection-name">lampshades</p>
+                            <a href="" class="link-view link">view more</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Weekly's best-->
+        <section class=" section">
+
+            <div class="container">
+                <p class="section-text">Weekly's best</p>
+                <h2 class="section-title">EXPLORE ITEMS</h2>
+                <div class="container-btn">
+                    <button class="btn">
+                        <p class="btn-text">view all</p>
+                    </button>
+                    <button class="btn">
+                        <p class="btn-text">view sale</p>
+                    </button>
+                </div>
+                <ul class="product-list list">
+                    <li class="product-item">
+                        <a href="" class="link-card link">
+                            <div class="card-mark">
+                                <p class="card-mark-text"> Sale</p>
+                            </div>
+                            <div>
+                                <picture class="product-item-img">
+                                    <source srcset="/img/image-5-01-min.webp, /img/image-5-01-min@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source srcset="/img/image-5-01-min.jpg 1x, /img/image-5-01-min@2x.jpg 2x"
+                                        type="image/jpeg" />
+                                    <img src="/img/image-5-01-min.jpg" alt="hero-image" height="472" />
+                                </picture>
+
+                                <p class="brand">brand name</p>
+                                <p class="new-collection-name">FIGURA ARC LAMP</p>
+                            </div>
+                            <div class="overlay">
+                                <div class="sale-price">
+                                    <p class="new-price-red">$610</p>
+                                    <p class="old-price-grey">$120</p>
+                                </div>
+                                <div class="cover">
+                                    <a href="" class="link-view link">add to cart</a>
+                                    <a href="" class="link-view link">quickview</a>
+                                    <svg width="24" height="24" class="product-icon">
+                                        <use href="/img/icons.svg#icon-arrows">
+                                        </use>
+                                    </svg>
+                                    <svg width="24" height="24" class="product-icon">
+                                        <use href="/img/icons.svg#icon-like">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-item">
+                        <a href="" class="link-card link">
+                            <div class="card-mark">
+                                <p class="card-mark-text"> Sale</p>
+                            </div>
+                            <div>
+                                <picture class="product-item-img">
+                                    <source srcset="/img/image-5-02-min.webp, /img/image-5-02-min@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source srcset="/img/image-5-02-min.jpg 1x, /img/image-5-02-min@2x.jpg 2x"
+                                        type="image/jpeg" />
+                                    <img src="/img/image-5-02-min.jpg" alt="hero-image" height="472" />
+                                </picture>
+                                <p class="brand">brand name</p>
+                                <p class="new-collection-name">EIKON BASIC PISTACHE</p>
+                            </div>
+                            <div class="overlay">
+                                <div class="sale-price">
+                                    <p class="new-price-red">$99</p>
+                                    <p class="old-price-grey">$120</p>
+                                </div>
+                                <div class="cover">
+                                    <a href="" class="link-view link">add to cart</a>
+                                    <a href="" class="link-view link">quickview</a>
+                                    <svg width="24" height="24" class="product-icon">
+                                        <use href="/img/icons.svg#icon-arrows">
+                                        </use>
+                                    </svg>
+                                    <svg width="24" height="24" class="product-icon">
+                                        <use href="/img/icons.svg#icon-like">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="product-item">
+                        <a href="" class="link-card link">
+                            <div class="card-mark">
+                                <p class="card-mark-text"> Hot</p>
+                            </div>
+                            <div>
+                                <picture class="product-item-img">
+                                    <source srcset="/img/image-5-03-min.webp, /img/image-5-03-min@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source srcset="/img/image-5-03-min.jpg 1x, /img/image-5-03-min@2x.jpg 2x"
+                                        type="image/jpeg" />
+                                    <img src="/img/image-5-03-min.jpg" alt="hero-image" height="472" />
+                                </picture>
+                                <p class="brand">brand name</p>
+                                <p class="new-collection-name">JUNIT LAMP "COPLA"</p>
+                            </div>
+                            <div class="overlay">
+                                <div class="price">
+                                    <p class="price-text">$1200</p>
+                                </div>
+                                <div class="cover">
+                                    <a href="" class="link-view link">add to cart</a>
+                                    <a href="" class="link-view link">quickview</a>
+                                    <svg width="24" height="24" class="product-icon">
+                                        <use href="/img/icons.svg#icon-arrows">
+                                        </use>
+                                    </svg>
+                                    <svg width="24" height="24" class="product-icon">
+                                        <use href="/img/icons.svg#icon-like">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="product-item">
+                        <a href="" class="link-card link">
+                            <div class="card-mark">
+                                <p class="card-mark-text"> top</p>
+                            </div>
+                            <div>
+                                <picture class="product-item-img">
+                                    <source srcset="/img/image-5-04-min.webp, /img/image-5-04-min@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source srcset="/img/image-5-04-min.jpg 1x, /img/image-5-04-min@2x.jpg 2x"
+                                        type="image/jpeg" />
+                                    <img src="/img/image-5-04-min.jpg" alt="hero-image" height="472" />
+                                </picture>
+                                <p class="brand">brand name</p>
+                                <p class="new-collection-name">KASKAD LAMP BIG MOSS</p>
+                            </div>
+                            <div class="overlay">
+                                <div class="price">
+                                    <p class="price-text">$336</p>
+                                </div>
+                                <div class="cover">
+                                    <a href="" class="link-view link">add to cart</a>
+                                    <a href="" class="link-view link">quickview</a>
+                                    <svg width="24" height="24" class="product-icon">
+                                        <use href="/img/icons.svg#icon-arrows">
+                                        </use>
+                                    </svg>
+                                    <svg width="24" height="24" class="product-icon">
+                                        <use href="/img/icons.svg#icon-like">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="product-item">
+                        <a href="" class="link-card link">
+                            <div class="card-mark">
+                                <p class="card-mark-text"> Sale</p>
+                            </div>
+                            <div>
+                                <picture class="product-item-img">
+                                    <source srcset="/img/image-5-05-min.webp, /img/image-5-05-min@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source srcset="/img/image-5-05-min.jpg 1x, /img/image-5-05-min@2x.jpg 2x"
+                                        type="image/jpeg" />
+                                    <img src="/img/image-5-05-min.jpg" alt="hero-image" height="472" />
+                                </picture>
+                                <p class="brand">brand name</p>
+                                <p class="new-collection-name">Vintage Fabric Lamps</p>
+                            </div>
+                            <div class="overlay">
+                                <div class="price">
+                                    <p class="price-text">$1100</p>
+                                </div>
+                                <div class="cover">
+                                    <a href="" class="link-view link">add to cart</a>
+                                    <a href="" class="link-view link">quickview</a>
+                                    <svg width="24" height="24" class="product-icon">
+                                        <use href="/img/icons.svg#icon-arrows">
+                                        </use>
+                                    </svg>
+                                    <svg width="24" height="24" class="product-icon">
+                                        <use href="/img/icons.svg#icon-like">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="product-item">
+                        <a href="" class="link-card link">
+                            <div class="card-mark">
+                                <p class="card-mark-text"> Sale</p>
+                            </div>
+                            <div>
+                                <picture class="product-item-img">
+                                    <source srcset="/img/image-5-06-min.webp, /img/image-5-06-min@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source srcset="/img/image-5-06-min.jpg 1x, /img/image-5-06-min@2x.jpg 2x"
+                                        type="image/jpeg" />
+                                    <img src="/img/image-5-06-min.jpg" alt="hero-image" height="472" />
+                                </picture>
+                                <p class="brand">brand name</p>
+                                <p class="new-collection-name">ZAPPY LAMP ASH</p>
+                            </div>
+                            <div class="overlay">
+                                <div class="price">
+                                    <p class="price-text">$1200</p>
+                                </div>
+                                <div class="cover">
+                                    <a href="" class="link-view link">add to cart</a>
+                                    <a href="" class="link-view link">quickview</a>
+                                    <svg width="24" height="24" class="product-icon">
+                                        <use href="/img/icons.svg#icon-arrows">
+                                        </use>
+                                    </svg>
+                                    <svg width="24" height="24" class="product-icon">
+                                        <use href="/img/icons.svg#icon-like">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="product-item">
+                        <a href="" class="link-card link">
+                            <div class="card-mark">
+                                <p class="card-mark-text"> hot</p>
+                            </div>
+                            <div>
+                                <picture class="product-item-img">
+                                    <source srcset="/img/image-5-07-min.webp, /img/image-5-07-min@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source srcset="/img/image-5-07-min.jpg 1x, /img/image-5-07-min@2x.jpg 2x"
+                                        type="image/jpeg" />
+                                    <img src="/img/image-5-07-min.jpg" alt="hero-image" height="472" />
+                                </picture>
+                                <p class="brand">brand name</p>
+                                <p class="new-collection-name">Shade Chandeliers</p>
+                            </div>
+                            <div class="overlay">
+                                <div class="sale-price">
+                                    <p class="new-price-red">$575</p>
+                                    <p class="old-price-grey">$620</p>
+                                </div>
+                                <div class="cover">
+                                    <a href="" class="link-view link">add to cart</a>
+                                    <a href="" class="link-view link">quickview</a>
+                                    <svg width="24" height="24" class="product-icon">
+                                        <use href="/img/icons.svg#icon-arrows">
+                                        </use>
+                                    </svg>
+                                    <svg width="24" height="24" class="product-icon">
+                                        <use href="/img/icons.svg#icon-like">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="product-item">
+                        <a href="" class="link-card link">
+                            <div class="card-mark">
+                                <p class="card-mark-text"> top </p>
+                            </div>
+                            <div>
+                                <picture class="product-item-img">
+                                    <source srcset="/img/image-5-08-min.webp, /img/image-5-08-min@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source srcset="/img/image-5-08-min.jpg 1x, /img/image-5-08-min@2x.jpg 2x"
+                                        type="image/jpeg" />
+                                    <img src="/img/image-5-08-min.jpg" alt="hero-image" height="472" />
+                                </picture>
+                                <p class="brand">brand name</p>
+                                <p class="new-collection-name">Small LED Light</p>
+                            </div>
+                            <div class="overlay">
+                                <div class="price">
+                                    <p class="price-text">$590</p>
+                                </div>
+                                <div class="cover">
+                                    <a href="" class="link-view link">add to cart</a>
+                                    <a href="" class="link-view link">quickview</a>
+                                    <svg width="24" height="24" class="product-icon">
+                                        <use href="/img/icons.svg#icon-arrows">
+                                        </use>
+                                    </svg>
+                                    <svg width="24" height="24" class="product-icon">
+                                        <use href="/img/icons.svg#icon-like">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+    </main>
+    <aside class="subscribe">
+        <div class="container">
+            <div class="subscribe-wrapper">
+                <div class="subsribe-text-wrapper">
+                    <p class="subsribe-text-name">Subscribe our Newsletter</p>
+                    <p class="subsribe-text-desc">And be aware of all discounts!</p>
+                </div>
+                <form>
+                    <div class="subscribe-form">
+                        <input class="subscribe-input" type="email" placeholder="E-mail" required>
+                        <button class="subscribe-button" type="submit">
+                            <svg width="24" height="24" class="subscribe-button-icon">
+                                <use href="/img/icons.svg#icon-send">
+                                </use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+    </aside>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-blocks-wrapper">
+            <div class="container">
+                <div class="footer-blocks">
+                    <address class="contacts">
+                        <p class="name-collection">luminaire</p>
+                        <ul class="footer-contacts-list list">
+                            <li class="footer-contacts-item">
+                                <svg width="24" height="24" class="subscribe-button-icon">
+                                    <use href="/img/icons.svg#icon-tel">
+                                    </use>
+                                </svg>
+                                <a href="tel:+33324324234342" class="footer-contacts-link link">+33324324234342</a>
+                            </li>
+
+                            <li class="footer-contacts-item">
+                                <svg width="24" height="24" class="subscribe-button-icon">
+                                    <use href="/img/icons.svg#icon-fax">
+                                    </use>
+                                </svg>
+                                <a href="" class="footer-contacts-link link">23423142314234</a>
+                            </li>
+                            <li class=" footer-contacts-item">
+                                <svg width="24" height="24" class="subscribe-button-icon">
+                                    <use href="/img/icons.svg#icon-email">
+                                    </use>
+                                </svg>
+                                <a href="mailto:admin@admin.com" class="footer-contacts-link link">admin@admin.com</a>
+                            </li>
+                            <li class=" footer-contacts-item">
+                                <svg width="24" height="24" class="subscribe-button-icon">
+                                    <use href="/img/icons.svg#icon-geolocation">
+                                    </use>
+                                </svg>
+                                <a href="" class="footer-contacts-link link">Store Northeast 4th Ave Fort<br>
+                                    Lauderdale
+                                    33304 Paris France</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <div class=" products">
+                        <p class="footer-blocks-name">Products</p>
+                        <ul class=" products-footer list">
+                            <li class="footer-item">
+                                <a href="" class=" footer-contacts-link link">Prices drop</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class=" footer-contacts-link link">New products</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class=" footer-contacts-link link">Best sales</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class=" footer-contacts-link link">Sitemap</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class=" footer-contacts-link link">Stores</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class=" footer-contacts-link link">Brands</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="our-company">
+                        <p class="footer-blocks-name">Our company</p>
+                        <ul class="our-company-list list">
+                            <li class="footer-item">
+                                <a href="" class="footer-contacts-link link">Delivery</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-contacts-link link">Legal notice</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-contacts-link link">Terms and conditions of use</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-contacts-link link">About us </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-contacts-link link">Secure payment</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-contacts-link link">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" your-account">
+                        <p class="footer-blocks-name">Your account</p>
+                        <ul class="your-account-list list">
+                            <li class="footer-item">
+                                <a href="" class="footer-contacts-link link">Personal info </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-contacts-link link">Orders</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-contacts-link link">Credit slips</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-contacts-link link">Addresses</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-footer">
+                <p>&copy 2022 MotoHome</p>
+                <div class="follow-us">
+                    <p class="follow-us-text">Follow us:</p>
+                    <div class="soc-icon">
+                        <ul class="soc-icon-list list">
+                            <li class="soc-icon-item">
+                                <a href="">
+                                    <svg width="24" height="24" class="soc-button-icon">
+                                        <use href="/img/icons.svg#icon-social-facebook">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="soc-icon-item">
+                                <a href="">
+                                    <svg width="24" height="24" class="soc-button-icon">
+                                        <use href="/img/icons.svg#icon-social-twitter">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="soc-icon-item">
+                                <a href="">
+                                    <svg width="24" height="24" class="soc-button-icon">
+                                        <use href="/img/icons.svg#icon-social-instagram">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="js/carousel.js"></script>
+    <script defer src="js/swiper-hero.js"></script>
+</body>
+
+</html>

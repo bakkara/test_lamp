@@ -121,6 +121,7 @@ img {
   border-bottom: 1px solid var(--color-white);
   padding-bottom: 12px;
   padding-top: 18px;
+  flex-wrap: wrap;
 }
 
 .burger-btn {
@@ -146,8 +147,7 @@ img {
 }
 
 .header-nav {
-  display: flex;
-  align-items: center;
+  display: none;
 }
 
 .header-list {
@@ -271,11 +271,16 @@ img {
 }
 .mobile-menu-header {
   background-color: var(--color-background-mobile-header);
-  padding: 25px 222px;
   color: var(--color-text-mobile-menu);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.mobile-menu-header-text {
   text-align: center;
   font-size: 30px;
   letter-spacing: 3px;
+  border-bottom: 1px solid var(--color-text-mobile-menu);
+  padding-bottom: 25px;
 }
 
 .mobile-menu-close-icon {
@@ -290,12 +295,29 @@ img {
 .mobile-menu-list {
   margin-bottom: 95px;
 }
+.header-nav-mob {
+  display: block;
+}
+.header-list-mob {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 24px;
+  letter-spacing: 3px;
+  gap: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.header-item-link-mob {
+  color: var(--color-text-mobile-menu);
+  font-size: 24px;
+  letter-spacing: 2.4px;
+}
 .mobile-menu-link {
   padding: 20px;
   border-bottom: 1px solid var(--color-background-mobile-header);
   color: var(--color-text-mobile-menu);
   font-size: 24px;
-  font-weight: 400;
   letter-spacing: 2.4px;
   text-transform: capitalize;
   display: flex;
@@ -321,7 +343,7 @@ img {
   padding-left: 20px;
   margin-bottom: 80px;
   font-family: "Montserrat";
-  font-size: 16px;
+  font-size: 24px;
   display: block;
   color: var(--color-text-mobile-menu);
   transition: transform var(--transition);
@@ -512,7 +534,6 @@ img {
   position: absolute;
   top: 186px;
   color: var(--color-white);
-  text-align: center;
   font-size: 59px;
   letter-spacing: 2.95px;
 }
@@ -532,7 +553,7 @@ img {
   font-weight: 400;
   letter-spacing: 1.3px;
   position: absolute;
-  top: 321px;
+  top: 390px;
   transition: transform var(--transition);
 }
 .link-see:hover {
@@ -1016,6 +1037,13 @@ img {
     padding-bottom: 14px;
     padding-top: 20px;
   }
+  .header-nav {
+    display: block;
+    align-items: center;
+  }
+  .header-nav-mob {
+    display: none;
+  }
   .name-collection-header {
     font-size: 24px;
     letter-spacing: 2.2px;
@@ -1040,6 +1068,9 @@ img {
   .container-btn {
     flex-direction: row;
     gap: 32px;
+  }
+  .link-see {
+    top: 321px;
   }
   .btn {
     min-width: 151px;

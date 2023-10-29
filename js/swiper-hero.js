@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
     const first = document.querySelector(".first")
     const second = document.querySelector(".second")
     const firstHero = document.querySelector('#first-hero');
@@ -48,4 +47,3 @@ document.addEventListener('DOMContentLoaded', function () {
         logoHeader.textContent = 'luminaire'
     }
     
-});

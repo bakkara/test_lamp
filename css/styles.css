@@ -109,6 +109,10 @@ img {
   padding-bottom: 20px;
 }
 
+.hidden {
+  display: none;
+}
+
 /**-----Header-----**/
 .header {
   background-color: var(--color-background);
@@ -365,7 +369,7 @@ img {
   display: block;
   position: relative;
   margin-bottom: 40px;
-  width: 478px;
+  width: 350px;
   height: 178px;
   background-color: var(--color-background);
   border: 2px dashed #98a9ca;
@@ -377,7 +381,7 @@ img {
   background-color: var(--color-white);
   position: absolute;
   top: 15px;
-  right: 40px;
+  right: 20px;
 }
 
 .text-time {
@@ -389,7 +393,7 @@ img {
   text-transform: capitalize;
   position: absolute;
   top: 15px;
-  left: 39px;
+  left: 0;
 }
 .text-sale {
   color: #98a9ca;
@@ -399,7 +403,7 @@ img {
   letter-spacing: 1px;
   text-transform: capitalize;
   position: absolute;
-  right: 80px;
+  right: 20px;
   bottom: 16px;
 }
 
@@ -1058,6 +1062,18 @@ img {
     text-align: center;
     letter-spacing: 3px;
     padding-bottom: 25px;
+  }
+  .sale-card {
+    width: 478px;
+  }
+  .max {
+    right: 40px;
+  }
+  .text-time {
+    left: 39px;
+  }
+  .text-sale {
+    right: 80px;
   }
   .hero {
     padding-top: 80px;

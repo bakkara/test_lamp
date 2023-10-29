@@ -715,7 +715,7 @@ img {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   display: block;
-  width: 80px;
+  width: 100%;
   padding: 12px 24px;
   background-color: var(--color-white);
   cursor: pointer;
@@ -1087,9 +1087,6 @@ img {
     padding-top: 80px;
   }
 
-  .img-collection-img {
-    width: 330px;
-  }
   .container-btn {
     flex-direction: row;
     gap: 32px;

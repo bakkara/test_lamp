@@ -830,7 +830,7 @@ img {
 .overlay {
   overflow: hidden;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .cover {
@@ -1184,7 +1184,7 @@ img {
     width: 450px;
   }
   .product-item {
-    max-width: calc((100% - 2 * 32px) / 3);
+    max-width: calc((100% - 3 * 32px) / 4);
   }
   .subscribe-wrapper {
     align-items: center;
@@ -1244,8 +1244,5 @@ img {
   .img-collection-img {
     width: 560px;
     height: 448px;
-  }
-  .product-item {
-    max-width: calc((100% - 3 * 32px) / 4);
   }
 }

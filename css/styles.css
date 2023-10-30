@@ -1095,7 +1095,7 @@ img {
     top: 321px;
   }
   .btn {
-    min-width: 151px;
+    width: 151px;
   }
   .product-item {
     max-width: calc((100% - 32px) / 2);
